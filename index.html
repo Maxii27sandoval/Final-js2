@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofi Nails</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+    <!-- estilos de css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('bLnzrXpHyI6eZBWbD')
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbarLeft">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#seccionProductos">Nuestros trabajos</a></li>
+                </ul>
+            </div>
+            <a class="logo" href="#"><img src="./img/logo.png"></a>
+            <div class="navbarRight">
+                <ul>
+                    <li><a href="#seccionSobreNosotros">Sobre nosotros</a></li>
+                    <li><a href="#seccionContacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="iconos">
+                    <a>
+                        <div class="botonCarrito">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="contadorCarrito">0</span>
+                        </div>
+                    </a>
+                </div>
+        </nav>
+    </header>
+    <main class="banner" id="inicio">
+        <section class="contenedorBanner">
+                <div class="tituloBanner">
+                    <h1 id="saludo">Sofi Nails</h1>
+                    <h2>!!Dale ese toque que le falta tus uñas!!</h2>
+                </div>
+            <img src="./img/uñas5.jpg" class="inicio-banner">
+        </section>
+    </main>
+    <img class="curva" src="./img/curvaVerde.png" alt="">
+    <section class="seccionProductos" id="seccionProductos">
+            <h2 class="titulo">Nuestros Trabajos</h2>
+            <div id="contenedorProductos" class="contenedorProductos">
+                <!-- productos diseñados en js -->
+    </section>
+    <img class="curva" src="./img/curvaRosa.png" alt="">
+    <section class="sobreNosotros" id="seccionSobreNosotros">
+        <div class="quienesSomos">
+            <h2 class="titulo">¿Quienes somos?</h2>
+            <p>
+                Hola! Mi nombre es Sofía Campos, soy Manicurista hace 2 años aproximadamente.
+                Empecé a trabajar en este mundo de embellecimiento de uñas porque siempre estaba arreglando mis uñas, entonces decidí hacer unos cursos y me anime a trabajar en esto.
+                Aun realizo cursos para poder seguir capacitandome y mejorar mi servicio, así cada vez quedan más satisfechas/chos con sus uñitas y también aprender nuevas técnicas que están moda
+            </p>
+        </div>
+    </section>
+    <img class="curva" src="./img/curvaRosaVerde.png" alt="">
+    <section class="seccionContacto" id="seccionContacto">
+        <h2 class="titulo" id="tituloContacto">Te damos la bienvenida</h2>
+        <p id="description">Dejanos un mensaje y te responderemos a la brevedad</p>
+        <form id="form">
+            
+            <div class="field">
+                <label for="to_name">Su Nombre</label>
+                <input type="text" name="to_name" id="to_name">
+            </div>
+            <div class="field">
+                <label for="message">Su mensaje</label>
+                <input type="text" name="message" id="message">
+            </div>
+            <div class="field">
+                <label for="emial_id">Su Numero de Telefono</label>
+                <input type="text" name="emial_id" id="emial_id">
+            </div>
+            <input type="submit" id="button" value="Send Email" >
+        </form>
+    </section>
+    <img class="curva" src="./imagenes/curvaVerde.png" alt="">
+    <footer>
+        <ul class="socialIconos">
+            <li>
+                <a href="https://www.instagram.com/sofii_nails21/" target="_blank">
+                    <box-icon name='instagram' type='logo' ></box-icon>
+                </a>
+            </li>
+            <li>
+                <a href="mailto: sofiicampos06@gmail.com">
+                    <box-icon name='envelope' type='solid' ></box-icon>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright"> 
+            <i class="fa-solid fa-copyright"></i>
+            2022 by Maximiliano Sandoval 
+        </p>
+    </footer>
+    <!-- Modal se abre al clickear boton de carrito -->
+    <div class="modalContenedorCarrito" id="modalContenedorCarrito">
+        <div class="modalCarrito">
+            <button class="carritoCerrar">
+                <div class="circulo"></div>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3>CARRITO</h3>
+            <div id="carritoContenedor" class="carritoContenedor">
+                <!-- modal en JavaScript index -->
+            </div>
+            <p class="precioTotal">
+                PRECIO TOTAL: 
+                <span id="precioTotal">0</span>
+            </p>
+            <button class="comprar" id="comprar">Comprar</button>
+            <button id="vaciarCarrito" class="vaciarCarrito">Vaciar carrito</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Script Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script JS-->
+    <script src="./js/formulario.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "ESCULPIDA",
+        "img": "./img/inicio2.jpeg",
+        "cantidad": 1,
+        "precio": 2000,
+        "descripcion": "son extensiones artificiales de las uñas, utilizando moldes para dar la forma y largo deseado."
+    },
+    
+    {
+        "id": 2,
+        "nombre": "MANICURA RUSA",
+        "img": "./img/uñas2.jpeg",
+        "cantidad": 1,
+        "precio": 700,
+        "descripcion": "consiste en una limpieza profunda de la uña, donde se retira por completo la cutícula con suavidad, se trabaja con torno y diferentes fresas"
+    },
+    
+    {
+        "id": 3,
+        "nombre": "SEMIPERMANENTE",
+        "img": "./img/uñas1.jpeg",
+        "cantidad": 1,
+        "precio": 1400,
+        "descripcion": "consiste en emaltar la uña natural, el mismo dura de 2 a 3 semanas aproximadamente, con este servicio no se puede agregar una extensión en la uña"
+    },
+    
+    {
+        "id": 4,
+        "nombre": "CAPPING",
+        "img": "./img/uñas9.jpeg",
+        "cantidad": 1,
+        "precio": 1700,
+        "descripcion": " consiste en aplicar una fina capa de gel fortificador sobre la uña natural, es ideal para uñas finas y débiles"
+    }
+]

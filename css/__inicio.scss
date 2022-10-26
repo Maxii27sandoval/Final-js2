@@ -1,0 +1,48 @@
+
+/* ------------banner--------------*/
+.banner {
+    height: 70vh;
+    width: 100vw;
+    margin-top: 5em;
+
+    .contenedorBanner {
+        height: 100%;
+        background-color: $colorPrimario;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .tituloBanner {
+            width: 53%;
+            max-height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+
+            h1 {
+                font-size: 6rem;
+                padding: 1em 0 1em 0;
+                width: 100%;
+                line-height: 120%;
+                padding-bottom: 2rem;
+            }
+
+            h2 {
+                font-family: $fontPrincipal;
+                font-size: 1.5rem;
+                font-weight: 100;
+                width: 100%;
+            }
+        }
+        
+        img {
+            height: auto;
+            width: 42%;
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+
